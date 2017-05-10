@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Appaula02</string>
+
+
+    <!-- login -->
+    <string name="login">login</string>
+    <string name="login_hint">Nome</string>
+
+    <string name="lorem">Proin placerat erat in vehicula pulvinar. Pellentesque venenatis orci eget ligula lobortis dictum. Quisque suscipit, tortor at accumsan accumsan, sapien arcu lobortis ex, eget facilisis erat sem eu lacus. Sed sed ipsum neque. Fusce consectetur rhoncus leo eu ullamcorper. Nullam cursus ultricies velit. Vivamus molestie ultrices purus, non tincidunt erat cursus eget. Etiam nec porta ante. Phasellus laoreet eget mauris sit amet malesuada. In dapibus congue nunc. Nunc euismod, ipsum eu tempor suscipit, nunc ipsum porttitor elit, sit amet malesuada turpis sem at est. Etiam eget mauris sit amet dui iaculis convallis. Praesent id neque sed mi aliquam pretium id quis lectus. Ut sed mollis quam, a tristique quam. Sed sed ex sed augue faucibus posuere non eget lacus.</string>
+
+
+</resources>
