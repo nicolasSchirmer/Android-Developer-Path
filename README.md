@@ -7,7 +7,6 @@
   - História
   - API's
   - Arquitetura
-  - Compilação
   - Layout
     - RelativeLayout
     - LinearLayout
@@ -19,7 +18,7 @@
 
 ### História
 
-O Android não foi criado pela Google, pasme! Em 2003 a Android Inc. estava criando um sistema operacional com grand epotêncial, porém estava sendo desenvolvido para câmeras digitais... Com esse potêncial sendo cada vez mais aparente, uma equipe de desenvolvedores começou a importar tal sistema para celulares, numa era onde [Symbian](https://en.wikipedia.org/wiki/Symbian) e [Windows Mobile](https://en.wikipedia.org/wiki/Windows_Mobile) dominavam o mercado.
+O Android não foi criado pela Google, pasme! Em 2003 a Android Inc. estava criando um sistema operacional com grande epotêncial, porém estava sendo desenvolvido para câmeras digitais... Com esse potêncial sendo cada vez mais aparente, uma equipe de desenvolvedores começou a importar tal sistema para celulares numa era onde [Symbian](https://en.wikipedia.org/wiki/Symbian) e [Windows Mobile](https://en.wikipedia.org/wiki/Windows_Mobile) dominavam o mercado.
 
 Em 2005 a Google comprou a Android Inc. por $50 milhões para colocar em celulares Blackberry... Tente imaginar esse mundo... Não havia touch e o teclado era o QWERTY.
 
@@ -41,7 +40,7 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 | 2.3    | 9 | Gingerbread | 2010  |  <ul><li>NFC</li><li>Suporte ao FLASH :laughing:</li></ul>        | 100 |
 | 3.0    | 11 | Honeycomb | 2011   |  <ul><li>Adição da Navbar</li><li>Suporte multicore CPU</li></ul>       | 97.4 |
 | 4.0    | 14 | Icecream sandwich | 2011  |  <ul><li>Gerenciador de dados móveis</li><li>Screenshot</li><li>Desbloqueio por reconhecimento facial</li></ul>        | 97.4 |
-| 4.1    | 16 | Jellybean | 2012   |  <ul><li>Google now</li><li>Multiplas contas no celular</li><li><b>Maioria das bibliotecas de terceiros suportam até essa versão (bom para sdk mínima)</b></li></ul>       | 95.2 |
+| 4.1    | 16 | Jellybean | 2012   |  <ul><li>Google now</li><li>Múltiplas contas no celular</li><li><b>Maioria das bibliotecas de terceiros suportam até essa versão (bom para sdk mínima)</b></li></ul>       | 95.2 |
 | 4.4    | 19 | Kitkat | 2013  |  <ul><li>"OK GOOGLE..." (Google começa a escutar tudo)</li><li>Sistema mais estável</li></ul>        | 73.9 |
 | 5.0    | 21 | Lollipop | 2014   |  <ul><li>Suporte para CPU 64bit</li><li><b><a href = "https://material.io/guidelines/">Material Design</a></b></li><li>Android Watch, Car, TV</li><li><a href = "https://source.android.com/devices/tech/dalvik/"><b>ART AOT</b></a></li></ul>       | 40.5 |
 | 6.0    | 23 | Marshmallow | 2015  |  <ul><li>Suporte à telas 4K</li><li>Novo sistema de permissões :imp:</li></ul>        | 4.7 |
@@ -60,13 +59,13 @@ Atualmente a arquitetura do Android se organiza desta forma:
 - **Apps**
 > É nessa camada que seu app será instalado, assim como app de terceiros e apps de sistema.
 - **Java API Framework**
-> Métodos do framework para uso dentro de um app, tendo métodos públicos e priuavodos (dos quais são acessíveis por [Java Reflection](https://docs.oracle.com/javase/tutorial/reflect/) ou [Hidden API](https://github.com/anggrayudi/android-hidden-api)).
+> Métodos do framework para uso dentro de um app, tendo métodos públicos e privados (dos quais são acessíveis por [Java Reflection](https://docs.oracle.com/javase/tutorial/reflect/) ou [Hidden API](https://github.com/anggrayudi/android-hidden-api)).
 - **C/C++**
-> Essa camada é especialmente útil para métodos que necessitam de alta performance (jogos, algoritmos complexos, filtros, etc..), pois é a última camada acessível dentro de um aplicativo e não passa pelo Java, por conseguinte não precisa passar pelo compilador do Android, também conhecido por [**NDK**](https://developer.android.com/ndk/index.html).
+> Essa camada é especialmente útil para métodos que necessitam de alta performance (jogos, algoritmos complexos, filtros, etc..), pois é a última camada acessível dentro de um aplicativo e não passa pelo Java, por conseguinte não precisa passar pelo compilador do Android. Essa camada é também conhecida por [**NDK**](https://developer.android.com/ndk/index.html).
 - **Android Runtime**
-> Nessa camada se encontra o compilador de APK para bytecode (dex2jar), tendo dois tipos de compiladores: Dalvik e ART.
+> Nessa camada se encontra o compilador de APK -> bytecode -> dex (dex2jar), tendo dois tipos de compiladores: Dalvik e ART.
 - **HAL**
-> Camada de abstração de hardware (Hardware Abstraction Layer) em suma cuida dos drivers que o dispositivo irá usar, sem que as camadas acima tenham que se preocupar em se comunicar diretamente com um componente, como a câmera por exemplo.
+> A camada de abstração de hardware (Hardware Abstraction Layer) cuida dos drivers que o dispositivo irá usar, sem que as camadas acima tenham que se preocupar em se comunicar diretamente com um componente, como a câmera por exemplo.
 - **Kernel**
 > Agrega e organiza os drivers, modo de boot, carrega programas primários do sistema ([ADB](https://developer.android.com/studio/command-line/adb.html), [zygote](https://anatomyofandroid.com/2013/10/15/zygote/), etc).
 
@@ -90,6 +89,6 @@ Em 2016 a equipe do Android Developer anunciou no Google IO uma arquitetura híb
 - Enquanto esse explica sobre o ART: https://www.youtube.com/watch?v=EBlTzQsUoOw
 - E caso esteja **MUITO** afim de aprender sobre VMs Android (Dalvik): https://www.youtube.com/watch?v=ptjedOZEXPM hahahahh...
 
-Só aí já tem quase um filme do Senhor dos Aneis versão extendida em questão de tempo... Minha dica: sai programando e deixa esses vídeos de fundo haha...
+Só aí já tem quase um filme do Senhor dos Aneis versão extendida em questão de tempo... Minha dica: sai programando e deixa esses rodando vídeos no fundo haha...
 
 **Caso queira conhecer mais a fundo o esqueleto do Android:** https://source.android.com/devices/tech/
