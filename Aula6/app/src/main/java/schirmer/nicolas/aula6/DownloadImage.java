@@ -23,11 +23,13 @@ public class DownloadImage extends AsyncTask<String, Integer, Bitmap> {
     public DownloadImage(Context context, ProgressBar progressBar, DownloadListener listener){
         this.context = context;
         this.listener = listener;
-        progressBar = progressBar;
+        this.progressBar = progressBar;
     }
 
     @Override
     protected void onPreExecute(){
+        super.onPreExecute();
+
         progressBar.setIndeterminate(true);
 
     }

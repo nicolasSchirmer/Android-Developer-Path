@@ -26,5 +26,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        downloadImage.execute();
+
+
+
     }
 }
