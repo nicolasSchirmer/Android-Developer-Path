@@ -55,7 +55,7 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 
 Atualmente a arquitetura do Android se organiza desta forma:
 
-<img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" width="450" height="667" />
+<p align="center"><img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" width="450" height="667" /></p>
 
 - **Apps**
 > É nessa camada que seu app será instalado, assim como app de terceiros e apps de sistema.
@@ -70,5 +70,26 @@ Atualmente a arquitetura do Android se organiza desta forma:
 - **Kernel**
 > Agrega e organiza os drivers, modo de boot, carrega programas primários do sistema ([ADB](https://developer.android.com/studio/command-line/adb.html), [zygote](https://anatomyofandroid.com/2013/10/15/zygote/), etc).
 
+<br>
+
+#### Dalvik - Android Runtime
+
+[Dalvik](https://en.wikipedia.org/wiki/Dalvik_(software)) faz parte do Android Runtime, do qual inclui multiplas classes Java em um único arquivo `.dex` (Dalvik executable), junto com algumas outras instruções úteis para o funcionamento da VM. Normalmente um arquivo `.dex` descomprimido ocupa menos espaço que um `.jar` comprimido.
+
+Essa arquitetura é mais coplexa que uma [máquina virutal Java comum](https://en.wikipedia.org/wiki/Java_virtual_machine), porém usa menos espaço em disco que o convencional, é mais rápida e é otimizada para funcionar com pouca memória.
+
+Em 2010 a Oracle processou a Google por ter quebrado licenças da VM Java, mas óbviamente os advogados da Google são bons o sufiente pra não perderem o caso e sairem ilesos haha...
+
 #### Dalvik vs ART
 
+A arquitetura ART nada mais é, que uma atualização do Dalvik, introduzido no Android 5.0 (Lollipop), diferente da arquitetura JIT (Just In Time - Apenas no momento) do Dalvik a arquitetura de compilação [ART](https://source.android.com/devices/tech/dalvik/) funciona com o princípio AOT (Ahead Of Time - À frente do tempo) em conjunto com JIT para manter compatibilidade, o que lhe provê uma maior performance, utilizando menos RAM e tendo menos chamadas de [Garbage Colector](https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/). Em outras palavras, quando você instala um app no dispositvo com ART runtime AOT, todo o app já é compilado para o uso, por isso que demora da primeira vez (dex2oat). Diferente do Dalvik, que vai compilando classes Java conforme é necessário.
+
+Em 2016 a equipe do Android Developer anunciou no Google IO uma arquitetura híbrida (JIT + AOT) de compilação por perfil (PGC - [Profile Guided Compilation](https://www.slideshare.net/linaroorg/las16201-art-jit-in-android-n)) para o Android 7+ (Nougat), mostrando melhorias de performance e redução do espaço usado por aplicações em disco.
+
+- Esse é um vídeo explicando o PGC: https://www.youtube.com/watch?v=fwMM6g7wpQ8
+- Enquanto esse explica sobre o ART: https://www.youtube.com/watch?v=EBlTzQsUoOw
+- E caso esteja **MUITO** afim de aprender sobre VMs Android (Dalvik): https://www.youtube.com/watch?v=ptjedOZEXPM hahahahh...
+
+Só aí já tem quase um filme do Senhor dos Aneis versão extendida em questão de tempo... Minha dica: sai programando e deixa esses vídeos de fundo haha...
+
+**Caso queira conhecer mais a fundo o esqueleto do Android:** https://source.android.com/devices/tech/
