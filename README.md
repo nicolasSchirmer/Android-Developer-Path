@@ -8,7 +8,6 @@
   - API's
   - Arquitetura
   - Compilação
-  - SDK & NDK
   - Layout
     - RelativeLayout
     - LinearLayout
@@ -46,6 +45,7 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 | 4.4    | 19 | Kitkat | 2013  |  <ul><li>"OK GOOGLE..." (Google começa a escutar tudo)</li><li>Sistema mais estável</li></ul>        | 73.9 |
 | 5.0    | 21 | Lollipop | 2014   |  <ul><li>Suporte para CPU 64bit</li><li><b><a href = "https://material.io/guidelines/">Material Design</a></b></li><li>Android Watch, Car, TV</li><li><a href = "https://source.android.com/devices/tech/dalvik/"><b>ART</b></a></li></ul>       | 40.5 |
 | 6.0    | 23 | Marshmallow | 2015  |  <ul><li>Suporte à telas 4K</li><li>Novo sistema de permissões :imp:</li></ul>        | 4.7 |
+| 7.0    | 24 | Marshmallow | 2016  |  <ul><li>Unicode 9 emoji :sunglasses:</li><li>**ART (JIT + AOT)**</li><li>[Vulcan 3D](https://en.wikipedia.org/wiki/Vulkan_(API))</li></ul>        | < 1 |
 
 **Link bem legal da história do Android:** https://www.android.com/history/
 
