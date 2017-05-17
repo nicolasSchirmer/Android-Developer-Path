@@ -7,6 +7,12 @@
   - História
   - API's
   - Arquitetura
+  - Android Studio
+    - O ambiente de desenvolvimento
+    - Gerênciador de SDk's
+    - Emuladores
+    - Importar projeto do Esclipse ADT
+    - Estrutura de projeto
   - Layout
     - RelativeLayout
     - LinearLayout
@@ -25,6 +31,8 @@ Em 2005 a Google comprou a Android Inc. por $50 milhões para colocar em celular
 Quando o IPhone veio ao mercado os engenheiros da equipe Android perceberam que precisavam voltar para a mesa de projetos... Hahah... Logo em 2008 surge a nova cara do Android rodando em um [HTC Dream](https://en.wikipedia.org/wiki/HTC_Dream), com incríveis 256Mb de RAM.
 
 **Link interessante sobre a história:** https://en.wikipedia.org/wiki/Android_(operating_system)
+
+<br>
 
 ### API'S
 
@@ -49,6 +57,8 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 **Link bem legal da história do Android:** https://www.android.com/history/
 
 **Lista completa de features por versão:** https://en.wikipedia.org/wiki/Android_version_history
+
+<br>
 
 ### Arquitetura
 
@@ -91,4 +101,26 @@ Em 2016 a equipe do Android Developer anunciou no Google IO uma arquitetura híb
 
 Só aí já tem quase um filme do Senhor dos Aneis versão extendida em questão de tempo... Minha dica: sai programando e deixa esses rodando vídeos no fundo haha...
 
+<p align="center"><img src="https://developer.android.com/images/tools/studio/build-process_2x.png" width="450" height="505" /></p>
+
 **Caso queira conhecer mais a fundo o esqueleto do Android:** https://source.android.com/devices/tech/
+
+<br>
+
+### Android Studio
+
+O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated Development Enviroment) para desenvolver aplicações para celulares, relógios, tv's e carros que rodam Android. Essa IDE é baseada no [IntelliJ](https://www.jetbrains.com/idea/) da JetBrains, substituindo assim o, já descontinuado :pray:, ambiente de desenvolvimento no [Eclipse ADT](https://developer.android.com/studio/tools/sdk/eclipse-adt.html).
+
+**Link oficial para baixar o Android Studio _(Linux, Mac, Windows)_:** https://developer.android.com/studio/index.html
+
+Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando.
+
+#### Configurando o Android Studio
+
+<p align="center"><img src="http://i.imgur.com/deqgYv6.png" /></p>
+<!-- trocar para gif -->
+
+Inicie um novo projeto (primeiro ícone), escolha o nome do seu projeto (nesse caso dei o nome de appAula01), diga o nome do package padrão do projeto (deixei como nicolas.schirmer)
+
+
+
