@@ -127,20 +127,22 @@ O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated De
 
 **Link oficial para baixar o Android Studio _(Linux, Mac, Windows)_:** https://developer.android.com/studio/index.html
 
-Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando.
+<br>
 
 <a name="studioconfig"/>
 
 #### Configurando o Android Studio
 
-<p align="center"><img src="https://media.giphy.com/media/xUA7aYaOm07Tqvqyuk/giphy.gif" /></p>
-<!-- trocar para gif -->
+Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando. Vamos começar esse processo criando um novo projeto limpo.
+
+<p align="center"><img src="/as_newProject.gif?raw=true" width="600px"/></p>
+<!-- gif de url fora não carrega -->
 
 - Inicie um novo projeto (primeiro ícone)
-- Escolha o nome do seu projeto (nesse caso dei o nome de Appaula01)
-- Diga o nome do package padrão do projeto (deixei como nicolas.schirmer)
-- Selecione o alcance mínimo de API (minha dica é deixar a API 16 como mínimo, devido à alta compatibilidade com bibliotecas de terceiros e grande alcance de dispositivos, representando 95.2% dos dispositivos ativos)
-- Por conseguinte, selecione a "Empty Activity" para começar um projeto limpo
+- Escolha o nome do seu projeto (nesse caso dei o nome de `Appaula01`)
+- Diga o nome do package padrão do projeto (deixei como `nicolas.schirmer`)
+- Selecione o alcance mínimo de API (minha dica é deixar a `API 16` como alcance mínimo, devido à alta compatibilidade com bibliotecas de terceiros e grande quantidade de dispositivos ativos, representando 95.2% dos dispositivos que ainda acessam a Google Play)
+- Por conseguinte, selecione a `Empty Activity` para começar um projeto "limpo"
 - Caso queira mudar o nome da Activity, sinta-se à vontade (irei deixar no padrão `MainActivity`)
 - **Finish**
 
