@@ -54,7 +54,7 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 | 2.3    | 9 | Gingerbread | 2010  |  <ul><li>NFC</li><li>Suporte ao FLASH :laughing:</li></ul>        | 100 |
 | 3.0    | 11 | Honeycomb | 2011   |  <ul><li>Adição da Navbar</li><li>Suporte multicore CPU</li></ul>       | 97.4 |
 | 4.0    | 14 | Icecream sandwich | 2011  |  <ul><li>Gerenciador de dados móveis</li><li>Screenshot</li><li>Desbloqueio por reconhecimento facial</li></ul>        | 97.4 |
-| 4.1    | 16 | Jellybean | 2012   |  <ul><li>Google now</li><li>Múltiplas contas no celular</li><li><b>Maioria das bibliotecas de terceiros suportam até essa versão (bom para sdk mínima)</b></li></ul>       | 95.2 |
+| 4.1    | 16 | Jellybean | 2012   |  <ul><li>Google now</li><li>Múltiplas contas no celular</li><li><b>Maioria das bibliotecas de terceiros suportam até essa versão (bom para sdk mínima)</b></li></ul>       | 95.2 | <!-- caso mude, mudar no configurando android studio -->
 | 4.4    | 19 | Kitkat | 2013  |  <ul><li>"OK GOOGLE..." (Google começa a escutar tudo)</li><li>Sistema mais estável</li></ul>        | 73.9 |
 | 5.0    | 21 | Lollipop | 2014   |  <ul><li>Suporte para CPU 64bit</li><li><b><a href = "https://material.io/guidelines/">Material Design</a></b></li><li>Android Watch, Car, TV</li><li><a href = "https://source.android.com/devices/tech/dalvik/"><b>ART AOT</b></a></li></ul>       | 40.5 |
 | 6.0    | 23 | Marshmallow | 2015  |  <ul><li>Suporte à telas 4K</li><li>Novo sistema de permissões :imp:</li></ul>        | 4.7 |
@@ -133,10 +133,18 @@ Assim que a IDE é instalada, existe algumas configurações e plugins que irão
 
 #### Configurando o Android Studio
 
-<p align="center"><img src="http://i.imgur.com/deqgYv6.png" /></p>
+<p align="center"><img src="https://media.giphy.com/media/xUA7aYaOm07Tqvqyuk/giphy.gif" /></p>
 <!-- trocar para gif -->
 
-Inicie um novo projeto (primeiro ícone), escolha o nome do seu projeto (nesse caso dei o nome de appAula01), diga o nome do package padrão do projeto (deixei como nicolas.schirmer)
+- Inicie um novo projeto (primeiro ícone)
+- Escolha o nome do seu projeto (nesse caso dei o nome de Appaula01)
+- Diga o nome do package padrão do projeto (deixei como nicolas.schirmer)
+- Selecione o alcance mínimo de API (minha dica é deixar a API 16 como mínimo, devido à alta compatibilidade com bibliotecas de terceiros e grande alcance de dispositivos, representando 95.2% dos dispositivos ativos)
+- Por conseguinte, selecione a "Empty Activity" para começar um projeto limpo
+- Caso queira mudar o nome da Activity, sinta-se à vontade (irei deixar no padrão `MainActivity`)
+- **Finish**
+
+**Pronto!** Agora que temos um projeto recém nascido e sem atributos, podemos deixá-lo de lado por enquanto para analisar e fazer possíveis melhorias no Android Studio, afinal, em algum momento você tem que se dar bem e se sentir confortável com esse negócio.
 
 
 
