@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Appaula04</string>
+
+    <string name="yes">sim</string>
+    <string name="no">não</string>
+    <string name="title">Meu dialog</string>
+    <string name="description">Esse é um dialog qualquer</string>
+
+    <string-array name="mArray">
+        <item>item 1</item>
+        <item>item 2</item>
+    </string-array>
+
+</resources>

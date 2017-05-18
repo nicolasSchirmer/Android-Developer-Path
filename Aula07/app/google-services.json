@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "239566144333",
+    "firebase_url": "https://aula7-75f79.firebaseio.com",
+    "project_id": "aula7-75f79",
+    "storage_bucket": "aula7-75f79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239566144333:android:aa441bcc203f35c2",
+        "android_client_info": {
+          "package_name": "schirmer.nicolas.aula07"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239566144333-n0s47pkfrusl8iresn6jr4u3dprmil1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrpT-aH17GDZJlNNEqKxYoVqSKMHAQ09g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
