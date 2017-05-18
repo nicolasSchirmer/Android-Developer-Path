@@ -48,7 +48,8 @@ public class Main2Activity extends AppCompatActivity implements OnMapReadyCallba
 
     private void getLocation(){
         // dialog de permissão
-        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+        if ( ContextCompat.checkSelfPermission( this,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
 
             ActivityCompat.requestPermissions( this,
                     new String[] {
@@ -64,7 +65,8 @@ public class Main2Activity extends AppCompatActivity implements OnMapReadyCallba
             return  ;
         }
 
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        LocationManager locationManager = (LocationManager)
+                getSystemService(LOCATION_SERVICE);
 
         Criteria criteria = new Criteria();
         Location location = locationManager.getLastKnownLocation(
