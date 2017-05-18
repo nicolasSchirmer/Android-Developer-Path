@@ -135,7 +135,7 @@ O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated De
 
 Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando. Vamos começar esse processo criando um novo projeto limpo.
 
-<p align="center"><img src="/as_newProject.gif?raw=true" width="600px"/></p>
+<p align="center"><img src="/as_newProject.gif?raw=true" width="750px"/></p>
 <!-- gif de url fora não carrega -->
 
 - Inicie um novo projeto (primeiro ícone)
