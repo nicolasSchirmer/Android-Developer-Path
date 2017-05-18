@@ -4,11 +4,13 @@
 
 ### Tópicos:
 
-  - História
-  - API's
-  - Arquitetura
-  - Android Studio
-    - O ambiente de desenvolvimento
+  - [História](#historia)
+  - [API's](#apis)
+  - [Arquitetura](#arquitetura)
+    - [Dalvik](#dalvik)
+    - [Dalvik vs ART](#dalvikvsart)
+  - [Android Studio](#androidstudio)
+    - [O ambiente de desenvolvimento](#studioconfig)
     - Gerênciador de SDk's
     - Emuladores
     - Importar projeto do Esclipse ADT
@@ -22,6 +24,7 @@
 
 ---
 
+<a name="historia"/>
 ### História
 
 O Android não foi criado pela Google, pasme! Em 2003 a Android Inc. estava criando um sistema operacional com grande epotêncial, porém estava sendo desenvolvido para câmeras digitais... Com esse potêncial sendo cada vez mais aparente, uma equipe de desenvolvedores começou a importar tal sistema para celulares numa era onde [Symbian](https://en.wikipedia.org/wiki/Symbian) e [Windows Mobile](https://en.wikipedia.org/wiki/Windows_Mobile) dominavam o mercado.
@@ -34,6 +37,7 @@ Quando o IPhone veio ao mercado os engenheiros da equipe Android perceberam que 
 
 <br>
 
+<a name="apis"/>
 ### API'S
 
 Até agora são 25 API's, da qual a última versão é o Android 7.1 (Nougat) que representa menos de 1% do mercado de telefones ativos. Foram poucas vezes que houve uma grande mudança no sistema operacional. Foi no Android 5.0 onde ocorreu a maior mudança no sistema operacional, mudando tanto seu funcionamento, quanto a identidade visual, pois adicionaram um novo sistema de compilação ([ART](https://source.android.com/devices/tech/dalvik/)) e a implementação do [Material Design](https://material.io/guidelines/).
@@ -60,6 +64,7 @@ Na tabela a baixo consta algumas versões do Android e suas features, junto com 
 
 <br>
 
+<a name="arquitetura"/>
 ### Arquitetura
 
 Atualmente a arquitetura do Android se organiza desta forma:
@@ -81,6 +86,7 @@ Atualmente a arquitetura do Android se organiza desta forma:
 
 <br>
 
+<a name="dalvik"/>
 #### Dalvik - Android Runtime
 
 [Dalvik](https://en.wikipedia.org/wiki/Dalvik_(software)) faz parte do Android Runtime, do qual inclui multiplas classes Java em um único arquivo `.dex` (Dalvik executable), junto com algumas outras instruções úteis para o funcionamento da VM. Normalmente um arquivo `.dex` descomprimido ocupa menos espaço que um `.jar` comprimido.
@@ -89,6 +95,7 @@ Essa arquitetura é mais coplexa que uma [máquina virutal Java comum](https://e
 
 Em 2010 a Oracle processou a Google por ter quebrado licenças da VM Java, mas óbviamente os advogados da Google são bons o sufiente pra não perderem o caso e sairem ilesos haha...
 
+<a name="dalvikvsart"/>
 #### Dalvik vs ART
 
 A arquitetura ART nada mais é, que uma atualização do Dalvik, introduzido no Android 5.0 (Lollipop), diferente da arquitetura JIT (Just In Time - Apenas no momento) do Dalvik a arquitetura de compilação [ART](https://source.android.com/devices/tech/dalvik/) funciona com o princípio AOT (Ahead Of Time - À frente do tempo) em conjunto com JIT para manter compatibilidade, o que lhe provê uma maior performance, utilizando menos RAM e tendo menos chamadas de [Garbage Colector](https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/). Em outras palavras, quando você instala um app no dispositvo com ART runtime AOT, todo o app já é compilado para o uso, por isso que demora da primeira vez (dex2oat). Diferente do Dalvik, que vai compilando classes Java conforme é necessário.
@@ -107,6 +114,7 @@ Só aí já tem quase um filme do Senhor dos Aneis versão extendida em questão
 
 <br>
 
+<a name="androidstudio"/>
 ### Android Studio
 
 O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated Development Enviroment) para desenvolver aplicações para celulares, relógios, tv's e carros que rodam Android. Essa IDE é baseada no [IntelliJ](https://www.jetbrains.com/idea/) da JetBrains, substituindo assim o, já descontinuado :pray:, ambiente de desenvolvimento no [Eclipse ADT](https://developer.android.com/studio/tools/sdk/eclipse-adt.html).
@@ -115,6 +123,7 @@ O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated De
 
 Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando.
 
+<a name="studioconfig"/>
 #### Configurando o Android Studio
 
 <p align="center"><img src="http://i.imgur.com/deqgYv6.png" /></p>
