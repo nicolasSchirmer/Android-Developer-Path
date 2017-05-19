@@ -3,6 +3,7 @@ package schirmer.nicolas.aula09;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,9 +18,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Main2Activity extends AppCompatActivity implements OnMapReadyCallback {
+public class Main2Activity extends AppCompatActivity implements OnMapReadyCallback, LocationListener {
 
     GoogleMap mMap;
+    Location location;
     int x = 0, y = 0;
 
     @Override
@@ -69,11 +71,33 @@ public class Main2Activity extends AppCompatActivity implements OnMapReadyCallba
                 getSystemService(LOCATION_SERVICE);
 
         Criteria criteria = new Criteria();
-        Location location = locationManager.getLastKnownLocation(
+        location = locationManager.getLastKnownLocation(
                 locationManager.getBestProvider(criteria, false)
         );
 
-        x = (int) (location.getLatitude());
-        y = (int) (location.getLongitude());
+        if(location != null) {
+            x = (int) (location.getLatitude());
+            y = (int) (location.getLongitude());
+        }
     }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        this.location = location;
+
+        if(location != null) {
+            x = (int) (location.getLatitude());
+            y = (int) (location.getLongitude());
+        }
+    }
+
+    @Override
+    public void onProviderEnabled(String string){}
+
+    @Override
+    public void onProviderDisabled(String string){}
+
+    @Override
+    public void onStatusChanged(String string, int i, Bundle bundle){}
+
 }
