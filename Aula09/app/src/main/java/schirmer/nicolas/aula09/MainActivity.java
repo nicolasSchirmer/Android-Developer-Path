@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         camera = checkDeviceCamera();
 
-        requestPermission();
-
         frame = (FrameLayout) findViewById(R.id.frame);
+
+        requestPermission();
 
         setView();
     }

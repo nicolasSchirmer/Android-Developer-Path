@@ -12,8 +12,6 @@ public class ImageSurfaceView extends SurfaceView implements SurfaceHolder.Callb
     private Camera camera;
     private SurfaceHolder surfaceHolder;
 
-
-
     public ImageSurfaceView(Context context, Camera camera) {
         super(context);
         this.camera = camera;
