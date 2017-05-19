@@ -18,11 +18,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Main2Activity extends AppCompatActivity implements OnMapReadyCallback, LocationListener {
+public class Main2Activity extends AppCompatActivity implements OnMapReadyCallback {
 
     GoogleMap mMap;
     Location location;
-    int x = 0, y = 0;
+    double x = 0, y = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,34 +70,41 @@ public class Main2Activity extends AppCompatActivity implements OnMapReadyCallba
         LocationManager locationManager = (LocationManager)
                 getSystemService(LOCATION_SERVICE);
 
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 10, new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                if(location != null) {
+                    x =  (location.getLatitude());
+                    y =  (location.getLongitude());
+                }
+            }
+
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+
+            }
+        });
+
         Criteria criteria = new Criteria();
         location = locationManager.getLastKnownLocation(
                 locationManager.getBestProvider(criteria, false)
         );
 
         if(location != null) {
-            x = (int) (location.getLatitude());
-            y = (int) (location.getLongitude());
+            x =  (location.getLatitude());
+            y =  (location.getLongitude());
         }
     }
 
-    @Override
-    public void onLocationChanged(Location location) {
-        this.location = location;
-
-        if(location != null) {
-            x = (int) (location.getLatitude());
-            y = (int) (location.getLongitude());
-        }
-    }
-
-    @Override
-    public void onProviderEnabled(String string){}
-
-    @Override
-    public void onProviderDisabled(String string){}
-
-    @Override
-    public void onStatusChanged(String string, int i, Bundle bundle){}
 
 }
