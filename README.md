@@ -135,7 +135,7 @@ O Android Studio é um abiente de desenvolvimento integrado (IDE - Integrated De
 
 Assim que a IDE é instalada, existe algumas configurações e plugins que irão facilitar sua vida na hora que estiver programando. Vamos começar esse processo criando um novo projeto limpo.
 
-<p align="center"><img src="/as_newProject.gif?raw=true" width="750px"/></p>
+<p align="center"><img src="/as_new_proj0.gif?raw=true" width="750px"/></p>
 <!-- gif de url fora não carrega -->
 
 - Inicie um novo projeto (primeiro ícone)
@@ -146,7 +146,57 @@ Assim que a IDE é instalada, existe algumas configurações e plugins que irão
 - Caso queira mudar o nome da Activity, sinta-se à vontade (irei deixar no padrão `MainActivity`)
 - **Finish**
 
+Caso já esteja com um projeto aberto e queira iniciar um projeto novo, é simples.
+
+<p align="center"><img src="/as_new_proj1.gif?raw=true" width="600px"/></p>
+
+- Vá em `File > New>  New Project` e siga as instruções do gif anterior
+
 **Pronto!** Agora que temos um projeto recém nascido e sem atributos, podemos deixá-lo de lado por enquanto para analisar e fazer possíveis melhorias no Android Studio, afinal, em algum momento você tem que se dar bem e se sentir confortável com esse negócio.
+
+> Desde a década de 80, programadores debatem qual tipo de constraste é mais "leve" para os olhos, normalmente tendo como assunto: fundo escuro com texto claro vs. fundo claro com texto escuro. Minha preferência é de fundos mais escuros, pois ao longo dos anos notei que é o padrão que me causa menos fadiga.
+
+O Android Studio por padrão te dá três opções de tema para escolher (`Darcula`, `GTK+` e `IntelliJ`).
+
+<p align="center"><img src="/as_apparence.gif?raw=true" width="600px"/></p>
+
+- Vá em `File > Settings > Appearance & Behavior > Appearance`
+- Em `UI Options` escolha o tema que mais te agrada (_afinal, é você quem vai estar usando_)
+- Clique em **Apply**
+
+**Eis uma dica que vale ouro....** Temos como melhorar o autocompletar do Android Studio, para que você quase nunca mais tenha que se preocupar em declarar `packages` para cada novo [`Objeto`](https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/) que utiliza uma [`Classe`](https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-3-uma-classe-em-java) que ainda não foi importada, deixando que a IDE cuide disso automágicamente. Como? Muito simples.
+
+<p align="center"><img src="/as_autocomplete.gif?raw=true" width="600px"/></p>
+
+- Ainda em `Settings`, vá em `Editor > General > Auto Import`
+- Marque todas as "caixinhas"
+- Clique em **Apply**
+
+> O grande "pulo do gato" do Android, foi a habilidade de rodar em múltiplos dispositivos com diferentes configurações (hm... Acho que já vi essa historia em algum lugar... <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Microsoft-128.png" width="15px"/>), com isso irá existir diversos tamanhos de tela com diferentes resoluções (Ex. 1080 x 1920 px). Atualmente dispositivos com tela `720p` precisam no mínimo de `1Gb` de RAM, enquanto telas `1080p` necessitam de `2Gb` de RAM. Para previnir que seu app estoure a memória do celular, existem [padrões de tamanho de imagens](https://developer.android.com/guide/practices/screens_support.html) para serem adicionados no seu projeto e não causar `OutOfMemory` (2º `Exception` mais comum no Android).
+
+**`Android Drawable Importer`** é um `Plugin` (praticamente obrigatório) que facilita sua vida na hora de importar uma imagem para um projeto, pois ele já prepara a imagem para diferentes densidades de telas.
+
+<p align="center"><img src="/as_plugin.gif?raw=true" width="700px"/></p>
+
+- Em `Plugins` terá todos plugins já instalados 
+- Vá em `Brownse repositories`
+- Procure por `Android Drawabke Importer` (enquanto está procurando, aproveite eaí dê uma olhada se tem mais algum plugin que te interesse :wink:)
+- Clique no botão `Install`
+- Espere baixar e clique no botão `Restar Android Studio`
+- Clique em **Ok** e reinicie seu Android Studio
+
+Para utilizar esse plugin é bem fácil.
+
+<p align="center"><img src="/as_adimporter.gif?raw=true" width="750px"/></p>
+
+- Clique com o botão direito em qualquer diretório da árvore de projeto
+- `New > Batch Drawable Importer` (aproveite e dê uma olhada em `Icon Pack Drawable Importer` também)
+- Na janela do `Batch Drawable Importer`, clique no `+` e selecione a imagem que quer importar (pode selecionar múltiplas imagens)
+- Irá abrir uma nova janela mostrando a imagem escolhida
+- Deixe as caixinhas `mdpi`, `hdpi`, `xhdpi` e `xxhdpi` marcadas (com esses quatro [padrões](https://developer.android.com/guide/practices/screens_support.html) você já vai conseguir tratar qualquer tamanho de tela)
+- **Caso tenha importado múltiplas imagens** clique no botão com um lápis como ícone (em baixo do `+`) para editar os padrões ou dar clique duplo no item da lista
+- **IMPORTANTE**: o nome da imagem não pode comçar com número ou ter letras maiúsculast
+- Clique em **`Ok`** e suas imagens vão estar dentro do diretório `Drawable` já separadas por tamanhos de tela
 
 
 
