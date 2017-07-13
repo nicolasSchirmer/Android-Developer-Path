@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula_02</string>
+
+    <string name="name">Uma pessoa</string>
+
+    <string name="edit">Editar</string>
+
+    <string name="ok">OK</string>
+
+    <string name="hint">Edite sua bio</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis cursus mauris eu porta. Aenean vestibulum ligula eu magna blandit lobortis. Integer placerat lacus quis ligula porta bibendum. Aenean a euismod diam. Vestibulum massa nisl, tempor eu magna id, condimentum mollis felis. Donec nisl libero, molestie ac tempus non, efficitur laoreet felis. Nunc placerat, diam vel suscipit maximus, nibh ligula pretium tellus, vitae eleifend justo mauris ac turpis. Nulla nec purus laoreet nisl maximus efficitur. Integer non sapien imperdiet, iaculis erat in, iaculis purus. Suspendisse eget sapien nec quam mollis eleifend. Praesent libero urna, imperdiet non est eget, volutpat pellentesque odio. Phasellus convallis non leo nec gravida. Pellentesque tristique libero nisl, ac aliquet nulla ullamcorper ac. Sed at turpis nec justo tristique luctus.</string>
+</resources>
