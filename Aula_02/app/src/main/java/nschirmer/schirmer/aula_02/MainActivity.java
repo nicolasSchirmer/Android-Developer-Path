@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtra("bio", new Gson().toJson(pessoa));
 
-        startActivityForResult(intent, 101);
+        startActivityForResult(intent, 101); // qualuqer requert code number
     }
 
     @Override
