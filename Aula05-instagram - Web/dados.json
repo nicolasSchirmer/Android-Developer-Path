@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "0": {
+        "name": "Google",
+        "avatar": "https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png",
+        "photo": "https://s3.amazonaws.com/digitaltrends-uploads-prod/2015/02/google-headquarters.jpg"
+      },
+      "1": {
+        "name": "Microsoft",
+        "avatar": "https://4.bp.blogspot.com/-eP9NFbRQ_pw/Ufm3iEKhXNI/AAAAAAAADGE/K8RsQguiXq4/s1600/windows+8+icon.png",
+        "photo": "https://i.ytimg.com/vi/KXSJNBGUH_o/maxresdefault.jpg"
+      },
+      "2": {
+        "name": "Apple",
+        "avatar": "https://www.digitaltrends.com/wp-content/plugins/dt-affiliates/assets/images/apple_logo.png",
+        "photo": "http://www.macgasm.net/wp-content/uploads/2014/08/xcode-swift-how-to-500x375.jpg"
+      },
+      "3": {
+        "name": "nulll",
+        "avatar": "https://www.codeproject.com/KB/architecture/648760/Null.png",
+        "photo": "https://typographya.files.wordpress.com/2011/09/null-21.jpg"
+      }
+    }
+  ]
+}
