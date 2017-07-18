@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Aula 7</string>
+
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+
+
+    <string name="error_email_null">Necessário preencher o email</string>
+    <string name="error_email_valid">Email não é válido</string>
+    <string name="error_pass_null">Necessário preencher a senha</string>
+    <string name="error_name_null">Necessário preencher com seu nome</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
