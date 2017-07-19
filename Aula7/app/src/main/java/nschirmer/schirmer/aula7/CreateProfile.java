@@ -68,7 +68,8 @@ public class CreateProfile extends AppCompatActivity {
             sharedPreferences.edit().putBoolean("logged", true).apply();
 
             // inicia activity sem histoico de activities
-            startActivity(new Intent(this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            startActivity(new Intent(this, MainActivity.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
         }
     }
 
